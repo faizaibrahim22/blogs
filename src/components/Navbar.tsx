@@ -17,21 +17,20 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className='text-gray-900  flex body-font shadow-lg'>
+    <header className='text-gray-900 bg-black flex body-font shadow-lg'>
       <div className='container mx-auto flex flex-wrap p-3 flex-col'>
-        <div className="flex text-black">
+        <div className="flex text-white">
           <span>{currentDateTime}</span> 
         </div>
-        <nav className='md:ml-8 flex  flex-wrap text-blue-900 justify-center'>
-          <ul className='flex gap-8'>
+        <nav className='md:ml-8 flex flex-wrap text-white text-lg justify-center'>
+          <ul className='flex gap-12'>
           <Link href={"/"}><li>Home</li></Link>
-          <Link href={"/"}><li>About</li></Link>
-          <Link href={"/"}><li>Blog</li></Link>
-          <Link href={"/"}><li>Content</li></Link>
+          <Link href={"/About"}><li>About</li></Link>
+          <Link href={"/Contact"}><li>Content</li></Link>
           </ul>
           </nav>
           <div  className='ml-96 relative left-52 bottom-6'>
-          <button className="inline-flex py-1 rounded w-16 text-white ml-96 font-bold bg-red-800 ">Youtube</button>
+          <button className="inline-flex py-1 rounded w-16 text-white hover:bg-red-400 ml-96 font-bold bg-red-600 ">Youtube</button>
          </div>
       </div>
     </header>
